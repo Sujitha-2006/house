@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+</head>
+<body>
+    <h1>House Price Prediction</h1>
+    <p>Welcome to the House Price Prediction application. This tool allows you to predict the price of a house based on various features such as location, size, number of bedrooms, and more.</p>
+    <p>To get started, please enter the relevant details about the house you want to evaluate and click the "Predict" button.</p>
+    <!-- Add form or input fields for user to enter house details here -->
+    <form action="/predict" method="post">
+        <input type="number" name="area" placeholder="Area (sq ft)" required>
+        <button type="submit">Predict</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
